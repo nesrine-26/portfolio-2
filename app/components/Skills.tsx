@@ -18,7 +18,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="relative  z-10 ">
+    <section className="relative min-h-screen overflow-hidden">
         <div className='max-w-7xl mx-auto px-6 md:py-32 py-10'>
       <h2 className="text-5xl font-bold mb-12 text-center">Technical <span className="text-green-600">Toolkit</span></h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -36,15 +36,15 @@ const Skills = () => {
         ))}
       </div>
       </div>
-      <div className='absolute inset-0 h-full -z-10 w-full  '>
-<Image
-              src="/bg2.png"
-              alt="bg image"
-              width={1000}
-              height={1000}
-              className="object-fill w-full h-full "
-            />
-      </div>
+       <div className="absolute inset-0 -z-10">
+                 <Image
+                   src="/bg2.png"
+                   alt="background"
+                   fill
+                   className="object-cover"
+                   priority
+                 />
+               </div>
        
     </section>
   );
