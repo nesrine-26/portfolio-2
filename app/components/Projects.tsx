@@ -29,16 +29,18 @@ const Projects = () => {
 
 ];
   return (
-    <div className="relative h-screen ">
-          <div className='absolute inset-0 h-full -z-10 w-full  '>
-              <Image
-                            src="/bg4.png"
-                            alt="bg image"
-                            width={1000}
-                            height={1000}
-                            className="object-fill w-full h-full "
-                          />
-                    </div>
+      <section className="relative min-h-screen overflow-hidden">
+         
+         {/* Background */}
+         <div className="absolute inset-0 -z-10">
+           <Image
+             src="/bg2.png"
+             alt="background"
+             fill
+             className="object-cover"
+             priority
+           />
+         </div>
        <h2 className="text-5xl font-bold text-center my-12">
         My <span className="text-green-600">Projects</span>
       </h2>
@@ -66,7 +68,7 @@ const Projects = () => {
 
 
       </div>
-      </div>
+      </section>
   )
 }
 

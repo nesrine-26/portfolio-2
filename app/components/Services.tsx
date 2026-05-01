@@ -1,58 +1,84 @@
 import Image from "next/image";
-import { HiOutlineCode, HiOutlineLightBulb, HiOutlineColorSwatch } from "react-icons/hi";
+import {
+  HiOutlineCode,
+  HiOutlineLightBulb,
+  HiOutlineColorSwatch,
+} from "react-icons/hi";
 
 const servicesData = [
   {
     title: "Full-Stack Development",
-    icon: <HiOutlineCode size={40} />,
-    description: "Building scalable web applications with Next.js and Sanity.io, focused on performance and clean architecture.",
+    icon: HiOutlineCode,
+    description:
+      "Building scalable web applications with Next.js and Sanity.io, focused on performance and clean architecture.",
   },
   {
     title: "UI/UX & Graphic Design",
-    icon: <HiOutlineColorSwatch size={40} />,
-    description: "Creating high-fidelity visuals and intuitive user interfaces using Figma, Photoshop, and Illustrator.",
+    icon: HiOutlineColorSwatch,
+    description:
+      "Creating high-fidelity visuals and intuitive user interfaces using Figma, Photoshop, and Illustrator.",
   },
   {
     title: "Process Optimization",
-    icon: <HiOutlineLightBulb size={40} />,
-    description: "Leveraging Industrial Engineering logic to streamline digital workflows and improve system efficiency.",
-  }
+    icon: HiOutlineLightBulb,
+    description:
+      "Leveraging Industrial Engineering logic to streamline digital workflows and improve system efficiency.",
+  },
 ];
 
 const Services = () => {
   return (
-    <section className="relative ">
-         <h2 className="text-5xl font-bold text-center pt-28 ">
+    <section className="relative overflow-hidden">
+      
+      {/* Heading */}
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-16 sm:pt-20 md:pt-28">
         My <span className="text-green-600">Services</span>
       </h2>
-        <div className="max-w-7xl mx-auto px-6 md:py-16 py-10 ">
 
-   
-     
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* We need to map over our servicesData array here */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-16">
+        
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {servicesData.map((service, index) => {
+            const Icon = service.icon;
+
+            return (
+              <div
+                key={index}
+                className="p-6 sm:p-8 border-2 border-green-100 rounded-2xl bg-white hover:border-green-500 transition-all duration-300 hover:shadow-lg"
+              >
+                {/* Icon */}
+                <div className="mb-4 text-green-600">
+                  <Icon size={32} className="sm:w-10 sm:h-10" />
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 text-gray-800">
+                  {service.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
-       {/* Background Layer */}
-              <div className='absolute inset-0 h-full -z-10 w-full  '>
-            <Image
-                          src="/bg2.png"
-                          alt="bg image"
-                          width={1000}
-                          height={1000}
-                          className="object-fill w-full h-full "
-                        />
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {servicesData.map((service, index) => (
-          <div key={index} className="p-8 border-2 border-green-100 rounded-2xl bg-white hover:border-green-500 transition-colors">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">{service.title}</h3>
-          <p>{service.description} </p>
-          </div>
-        ))}
+
+      {/* Background */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/bg2.png"
+          alt="bg image"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
       </div>
-           </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

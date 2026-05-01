@@ -4,34 +4,47 @@ import { FaFigma } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+      
       {/* Background Image */}
       <Image
         src="/bg1.png"
         alt="Creative Background"
         fill
         priority
-        className="object-cover z-0"
+        className="object-cover"
       />
 
-      {/* Main Content Container */}
-      <div className="relative z-10 flex flex-col items-center text-center px-4">
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
         
-        {/* Animated Heading */}
-        <h1 className="italic text-[clamp(60px,10vw,120px)] font-black leading-[0.9] tracking-tighter uppercase mb-8">
+        {/* Heading */}
+        <h1 className="italic font-black leading-[0.9] tracking-tighter uppercase mb-6 sm:mb-8
+                       text-[clamp(40px,12vw,120px)]">
           <span className="text-green-500">G</span>raphic<br />
           Desi<span className="text-green-500">gner</span>
         </h1>
 
-        {/* Professional Icon Stack */}
-        <div className="flex items-center gap-6 p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl">
-          <DiPhotoshop size={45} className="text-blue-400 hover:scale-110 transition-transform" />
-          <DiIllustrator size={45} className="text-orange-400 hover:scale-110 transition-transform" />
-          <FaFigma size={40} className="text-purple-400 hover:scale-110 transition-transform" />
+        {/* Icons */}
+        <div className="flex items-center gap-4 sm:gap-6 p-3 sm:p-4 
+                        bg-white/10 backdrop-blur-md rounded-xl sm:rounded-2xl 
+                        border border-white/20 shadow-xl">
+          
+          <DiPhotoshop className="text-blue-400 transition-transform hover:scale-110
+                                 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
+          
+          <DiIllustrator className="text-orange-400 transition-transform hover:scale-110
+                                   w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
+          
+          <FaFigma className="text-purple-400 transition-transform hover:scale-110
+                             w-7 h-7 sm:w-9 sm:h-9 lg:w-11 lg:h-11" />
         </div>
 
-        {/* Refined Glow Effect */}
-        <div className="absolute -z-10 w-[500px] h-[500px] bg-green-500/20 blur-[120px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        {/* Glow Effect */}
+        <div className="absolute -z-10 
+                        w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px]
+                        bg-green-500/20 blur-[80px] sm:blur-[100px] lg:blur-[120px] 
+                        rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       </div>
     </section>
   );
