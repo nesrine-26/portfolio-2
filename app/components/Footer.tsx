@@ -26,6 +26,9 @@ const Footer = () => {
   return (
     <footer id="contact">
       {/* top footer */}
+      <div className="bg-dark text-white">
+
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           
@@ -69,9 +72,10 @@ const Footer = () => {
 
       {/* bottom footer */}
       <div className="bg-dark ">
-        <p className="bg-green text-center text-white py-1 text-sm sm:text-base">
+        <p className="bg-green dark:bg-dark shadow-2xl text-center text-white py-1 text-sm sm:text-base">
           All rights reserved to idea © 2026
         </p>
+      </div>
       </div>
     </footer>
   );

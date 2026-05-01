@@ -27,12 +27,12 @@ const reviews = [
 
 const Testimonials = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="dark:text-white relative min-h-screen overflow-hidden">
       
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/bg2.png"
+          src="/dark2.png"
           alt="background"
           fill
           className="object-cover"
@@ -43,7 +43,7 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
         
         {/* Heading */}
-          <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+          <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 dark:text-white text-gray-900">
             What People <span className="text-green-600">Say</span>
           </h2>
 

@@ -19,8 +19,8 @@ const Skills = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-        <div className='max-w-7xl mx-auto px-6 md:py-32 py-10'>
-        <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+        <div className='max-w-7xl mx-auto px-4 md:py-32 py-10'>
+        <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl mb-6  font-bold dark:text-white text-gray-900">
             Tecknical <span className="text-green-600">Toolkit</span>
           </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -40,7 +40,7 @@ const Skills = () => {
       </div>
        <div className="absolute inset-0 -z-10">
                  <Image
-                   src="/bg2.png"
+                   src="/dark2.png"
                    alt="background"
                    fill
                    className="object-cover"

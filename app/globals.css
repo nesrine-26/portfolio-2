@@ -2,7 +2,5 @@
 
 @theme {
   --color-green: #66cc33;
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-dark: #07090A;
 }

@@ -31,7 +31,7 @@ const Services = () => {
     <section className="relative overflow-hidden">
       
       {/* Heading */}
-      <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+      <h2 className="text-center md:order-2 order-1 pt-16  text-5xl md:text-6xl font-bold  dark:text-white text-gray-900">
              My <span className="text-green-600">Services</span>
           </h2>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-16">
@@ -69,10 +69,10 @@ const Services = () => {
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/bg2.png"
+          src="/dark2.png"
           alt="bg image"
           fill
-          className="object-cover opacity-20"
+          className="object-cover "
           priority
         />
       </div>

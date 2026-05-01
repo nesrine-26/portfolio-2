@@ -28,8 +28,11 @@ const workHistory = [
 
 const Experience = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+    <section className=" bg-dark">
+      <div className='max-w-7xl mx-auto px-4 py-20 '>
+
+     
+        <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 dark:text-white  text-gray-900">
             Professional <span className="text-green-600">Journey</span>
           </h2>
       
@@ -65,6 +68,7 @@ const Experience = () => {
           </div>
         ))}
       </div>
+       </div>
     </section>
   );
 };
