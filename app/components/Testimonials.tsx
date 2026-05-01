@@ -43,10 +43,9 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
         
         {/* Heading */}
-        <h2 className="text-center font-bold 
-                       text-3xl sm:text-4xl lg:text-5xl">
-          What People <span className="text-green-500">Say</span>
-        </h2>
+          <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            What People <span className="text-green-600">Say</span>
+          </h2>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 

@@ -8,7 +8,7 @@ const Contact = () => {
          {/* Background */}
          <div className="absolute inset-0 -z-10">
            <Image
-             src="/bg2.png"
+             src="/bg3.png"
              alt="background"
              fill
              className="object-cover"
@@ -16,11 +16,12 @@ const Contact = () => {
            />
          </div>
       {/* Content */}
-      <div className='text-center max-w-xl space-y-6'>
+      <div className='text-center max-w-xl space-y-6 pt-10 mx-auto'>
         
-        <h1 className='text-4xl font-bold text-green-700'>
-          Get In Touch
-        </h1>
+        <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 text-center ">
+            Get in <span className="text-green-600 text-center pt-10">touch</span>
+          </h2>
+      
 
         <p className='text-gray-600'>
           Have a project in mind or just want to say hello?  

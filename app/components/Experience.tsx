@@ -29,9 +29,9 @@ const workHistory = [
 const Experience = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-20">
-      <h2 className="text-5xl font-bold mb-12 text-center">
-        Professional <span className="text-green-600">Journey</span>
-      </h2>
+        <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            Professional <span className="text-green-600">Journey</span>
+          </h2>
       
       <div className="space-y-12">
         {workHistory.map((job, index) => (

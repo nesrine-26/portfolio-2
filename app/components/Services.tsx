@@ -31,10 +31,9 @@ const Services = () => {
     <section className="relative overflow-hidden">
       
       {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-16 sm:pt-20 md:pt-28">
-        My <span className="text-green-600">Services</span>
-      </h2>
-
+      <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+             My <span className="text-green-600">Services</span>
+          </h2>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-16">
         
         {/* Cards */}

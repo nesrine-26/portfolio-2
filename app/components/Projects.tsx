@@ -34,19 +34,19 @@ const Projects = () => {
          {/* Background */}
          <div className="absolute inset-0 -z-10">
            <Image
-             src="/bg2.png"
+             src="/bg4.png"
              alt="background"
              fill
              className="object-cover"
              priority
            />
          </div>
-       <h2 className="text-5xl font-bold text-center my-12">
-        My <span className="text-green-600">Projects</span>
-      </h2>
-         <div className="grid grid-cols-1 relative z-10   md:grid-cols-3 gap-10 py-10 px-6  max-w-6xl  ">
+      <h2 className="text-center md:order-2 order-1 text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+             My <span className="text-green-600">Projects</span>
+          </h2>
+         <div className="grid grid-cols-1 relative z-10  md:grid-cols-3 gap-10 py-10 px-6  max-w-6xl  ">
             {projectList?.map(project=>(
-                <div key={project.id} className="w-fit max-w-96 max-h-fit  bg-[#EFEBD2]/10 p-6  backdrop-blur-sm  border-[#298415] border-4 rounded-2xl">
+                <div key={project.id} className="w-fit max-w-96 max-h-fit  mx-auto md:mx-0 bg-[#EFEBD2]/10 p-6  backdrop-blur-sm  border-[#298415] border-4 rounded-2xl">
                     <h3 className="text-center font-bold ">{project.title} </h3>
         <p className="text-center font-semibold italic mb-2 underline  ">{project.category } </p>
 

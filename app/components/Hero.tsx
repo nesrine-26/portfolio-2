@@ -20,7 +20,7 @@ const Hero = () => {
         
         {/* Heading */}
         <h1 className="italic font-black leading-[0.9] tracking-tighter uppercase mb-6 sm:mb-8
-                       text-[clamp(40px,12vw,120px)]">
+                       text-[clamp(72px,18vw,120px)]">
           <span className="text-green-500">G</span>raphic<br />
           Desi<span className="text-green-500">gner</span>
         </h1>
@@ -31,13 +31,13 @@ const Hero = () => {
                         border border-white/20 shadow-xl">
           
           <DiPhotoshop className="text-blue-400 transition-transform hover:scale-110
-                                 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
+                                 w-12 h-12" />
           
           <DiIllustrator className="text-orange-400 transition-transform hover:scale-110
-                                   w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" />
+                                   w-12 h-12 " />
           
           <FaFigma className="text-purple-400 transition-transform hover:scale-110
-                             w-7 h-7 sm:w-9 sm:h-9 lg:w-11 lg:h-11" />
+                             w-12 h-12 " />
         </div>
 
         {/* Glow Effect */}

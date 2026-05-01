@@ -57,9 +57,9 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border bg-background border-secondary p-2 rounded-sm"
+                  className="border bg-background border-white p-2 rounded-full bg-green"
                 >
-                  <Icon size={24} />
+                  <Icon size={24} className="text-white" />
                 </a>
               );
             })}
@@ -69,7 +69,7 @@ const Footer = () => {
 
       {/* bottom footer */}
       <div className="bg-dark ">
-        <p className="bg-green text-center text-background text-sm sm:text-base">
+        <p className="bg-green text-center text-white py-1 text-sm sm:text-base">
           All rights reserved to idea © 2026
         </p>
       </div>
