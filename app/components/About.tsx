@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="bg-dark ">
+    <section className="dark:bg-dark ">
       <div className="max-w-7xl mx-auto px-4 py-20 ">
 
 

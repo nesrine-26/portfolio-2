@@ -6,12 +6,19 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">      
       {/* Background Image */}
+       <Image
+        src="/bg1.png"
+        alt="Creative Background"
+        fill
+        priority
+        className="object-cover dark:hidden block"
+      />
       <Image
         src="/dark.png"
         alt="Creative Background"
         fill
         priority
-        className="object-cover"
+        className="object-cover  hidden dark:block"
       />
 
       {/* Content */}

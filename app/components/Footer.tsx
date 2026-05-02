@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer id="contact">
       {/* top footer */}
-      <div className="bg-dark text-white">
+      <div className="dark:bg-dark dark:text-white">
 
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">

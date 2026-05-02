@@ -6,13 +6,21 @@ const Contact = () => {
       <section className="relative min-h-screen overflow-hidden">
          {/* Background */}
          <div className="absolute inset-0 -z-10">
-           <Image
-             src="/dark3.png"
-             alt="background"
-             fill
-             className="object-cover"
-             priority
-           />
+          <Image
+                 src="/bg3.png"
+                 alt="Creative Background"
+                 fill
+                 priority
+                 className="object-cover dark:hidden block"
+               />
+               <Image
+                 src="/dark3.png"
+                 alt="Creative Background"
+                 fill
+                 priority
+                 className="object-cover  hidden dark:block"
+               />
+         
          </div>
       {/* Content */}
       <div className='text-center max-w-xl space-y-6 pt-10 mx-auto'>      

@@ -28,7 +28,7 @@ const workHistory = [
 
 const Experience = () => {
   return (
-    <section className=" bg-dark">
+    <section className=" dark:bg-dark">
       <div className='max-w-7xl mx-auto px-4 py-20 '>
 
      

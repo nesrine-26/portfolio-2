@@ -6,7 +6,7 @@ const Projects = () => {
     id: 1,
     title: "Project Alpha",
     category: "Full Stack Development",
-    image: "/bg2.png", // Path to your screenshot
+    image: "/bg3.png", // Path to your screenshot
     techStack: ["Next.js", "Tailwind", "Sanity.io"],
     description: "A high-level look at how engineering logic solved a design problem."
   },
@@ -14,7 +14,7 @@ const Projects = () => {
     id: 2,
     title: "Project Alpha",
     category: "Full Stack Development",
-    image: "/bg2.png", // Path to your screenshot
+    image: "/bg4.png", // Path to your screenshot
     techStack: ["Next.js", "Tailwind", "Sanity.io"],
     description: "A high-level look at how engineering logic solved a design problem."
   },
@@ -32,13 +32,21 @@ const Projects = () => {
       <section className="relative min-h-screen overflow-hidden">      
          {/* Background */}
          <div className="absolute inset-0 -z-10">
-           <Image
-             src="/dark4.png"
-             alt="background"
-             fill
-             className="object-cover"
-             priority
-           />
+            <Image
+                   src="/bg4.png"
+                   alt="Creative Background"
+                   fill
+                   priority
+                   className="object-cover dark:hidden block"
+                 />
+                 <Image
+                   src="/dark4.png"
+                   alt="Creative Background"
+                   fill
+                   priority
+                   className="object-cover  hidden dark:block"
+                 />
+           
          </div>
       <h2 className="text-center pt-16 md:order-2 order-1 text-5xl md:text-6xl font-bold  dark:text-white text-gray-900">
              My <span className="text-green-600">Projects</span>
@@ -58,8 +66,8 @@ const Projects = () => {
         />
         <p className="mt-5 ">{project.description } </p>
         <ul className="flex items-center gap-2 justify-center my-3 ">
-            {project?.techStack.map(stack =>(
-                <li className="bg-green-200 p-1 rounded-lg ">{stack} </li>
+            {project?.techStack.map((stack, index) =>(
+                <li key={index} className="bg-green-200 p-1 rounded-lg ">{stack} </li>
             ))}
         </ul>
                 </div>

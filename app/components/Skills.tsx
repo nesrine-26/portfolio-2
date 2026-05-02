@@ -28,8 +28,8 @@ const Skills = () => {
           <div key={index} className="p-8 border-2 border-green-100 rounded-2xl bg-white hover:border-green-500 transition-colors">
             <h3 className="text-2xl font-bold mb-4 text-gray-800">{category.title}</h3>
             <ul className="flex flex-wrap gap-2">
-              {category.skills.map((skill) => (
-                <li key={skill} className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
+              {category.skills.map((skill, index) => (
+                <li  key={index} className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
                   {skill}
                 </li>
               ))}
@@ -39,13 +39,21 @@ const Skills = () => {
       </div>
       </div>
        <div className="absolute inset-0 -z-10">
-                 <Image
-                   src="/dark2.png"
-                   alt="background"
-                   fill
-                   className="object-cover"
-                   priority
-                 />
+                  <Image
+                         src="/bg2.png"
+                         alt="Creative Background"
+                         fill
+                         priority
+                         className="object-cover dark:hidden block"
+                       />
+                       <Image
+                         src="/dark2.png"
+                         alt="Creative Background"
+                         fill
+                         priority
+                         className="object-cover  hidden dark:block"
+                       />
+                 
                </div>
        
     </section>

@@ -31,13 +31,21 @@ const Testimonials = () => {
       
       {/* Background */}
       <div className="absolute inset-0 -z-10">
-        <Image
-          src="/dark2.png"
-          alt="background"
-          fill
-          className="object-cover"
-          priority
-        />
+         <Image
+                src="/bg2.png"
+                alt="Creative Background"
+                fill
+                priority
+                className="object-cover dark:hidden block"
+              />
+              <Image
+                src="/dark2.png"
+                alt="Creative Background"
+                fill
+                priority
+                className="object-cover  hidden dark:block"
+              />
+        
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
