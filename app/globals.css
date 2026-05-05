@@ -5,3 +5,26 @@
   --color-green: #66cc33;
   --color-dark: #07090A;
 }
+
+
+.left {
+  animation: leftEnter .5s ease-out forwards ;
+}
+
+@keyframes leftEnter {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+   100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+* {
+  cursor: none;
+}
+
+*, *::before, *::after {
+  cursor: url('/brush.png') 4 4;
+}

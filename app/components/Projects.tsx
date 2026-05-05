@@ -48,10 +48,10 @@ const Projects = () => {
                  />
            
          </div>
-      <h2 className="text-center pt-16 md:order-2 order-1 text-5xl md:text-6xl font-bold  dark:text-white text-gray-900">
+      <h2 className="left text-center pt-16 md:order-2 order-1 text-5xl md:text-6xl font-bold  dark:text-white text-gray-900">
              My <span className="text-green-600">Projects</span>
           </h2>
-         <div className="grid grid-cols-1 relative z-10  md:grid-cols-3 gap-10 py-10 px-4  max-w-6xl  ">
+         <div className="left grid grid-cols-1 relative z-10  md:grid-cols-3 gap-10 py-10 px-4  max-w-6xl  ">
             {projectList?.map(project=>(
                 <div key={project.id} className="dark:text-white w-fit max-w-96 max-h-fit  mx-auto md:mx-0 bg-[#EFEBD2]/10 p-6  backdrop-blur-sm  border-[#298415] border-4 rounded-2xl">
                     <h3 className="text-center font-bold ">{project.title} </h3>

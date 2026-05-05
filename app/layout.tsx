@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Baloo_2 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-
+import CustomCursor from './components/CustomCursor';
 const baloo = Baloo_2({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,6 +25,7 @@ export default function RootLayout({
       className={`${baloo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+         <CustomCursor/>
         <ThemeProvider attribute="class">
           {children}
         </ThemeProvider>

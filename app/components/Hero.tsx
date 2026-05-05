@@ -4,7 +4,7 @@ import { FaFigma } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">      
+    <section className=" relative min-h-screen w-full flex items-center justify-center overflow-hidden">      
       {/* Background Image */}
        <Image
         src="/bg1.png"
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
         
         {/* Heading */}
-        <h1 className="italic font-black leading-[0.9] tracking-tighter uppercase mb-6 sm:mb-8
+        <h1 className="italic font-black leading-[0.9] tracking-tighter uppercase mb-6 sm:mb-8 left
                        text-[clamp(42px,14vw,120px)] dark:text-white">
           <span className="text-green-500">G</span>raphic<br />
           Desi<span className="text-green-500">gner</span>

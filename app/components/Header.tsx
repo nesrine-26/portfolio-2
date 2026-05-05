@@ -17,13 +17,13 @@ const Header = () => {
   ];
 
   return (
-    <header className="relative bg-white/50 dark:bg-black/40 backdrop-blur-2xl md:px-10 px-4">
+    <header className=" relative bg-white/50 dark:bg-black/40 backdrop-blur-2xl md:px-10 px-4">
       
-      <div className="flex justify-between max-w-7xl mx-auto items-center py-4">
+      <div className="flex justify-between max-w-7xl mx-auto items-center py-4 ">
         
        
         {/* Desktop nav */}
-        <div className="hidden lg:flex gap-4">
+        <div className="hidden lg:flex gap-4 ">
           {navItems.map((nav) => (
             <a
               key={nav.name}
@@ -43,7 +43,7 @@ const Header = () => {
             onClick={() =>
               setTheme(resolvedTheme === "dark" ? "light" : "dark")
             }
-            className="p-2 rounded-lg hover:bg-black/10 dark:hover:bg-white/10"
+            className="p-2 rounded-lg hover:bg-black/10 dark:hover:bg-white/10  brush"
           >
             {resolvedTheme === "dark" ? <FaSun /> : <FaMoon />}
           </button>

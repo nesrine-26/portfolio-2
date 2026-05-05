@@ -29,7 +29,7 @@ const Skills = () => {
             <h3 className="text-2xl font-bold mb-4 text-gray-800">{category.title}</h3>
             <ul className="flex flex-wrap gap-2">
               {category.skills.map((skill, index) => (
-                <li  key={index} className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
+                <li  key={index} className="bg-green-50-/30 backdrop-blur-2xl text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
                   {skill}
                 </li>
               ))}

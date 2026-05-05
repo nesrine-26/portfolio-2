@@ -13,7 +13,7 @@ import Testimonials from "./components/Testimonials";
 export default function Home() {
   return (
     <div className=" relative   ">
-      <div className="sticky top-0 z-50 ">
+      <div className="sticky top-0 z-10 brush">
 <Header />
       </div>
       
